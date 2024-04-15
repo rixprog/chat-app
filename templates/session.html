@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study material</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .subject-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .subject-list li {
+            margin-bottom: 10px;
+        }
+        .subject-list a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .subject-list a:hover {
+            background-color: #218838;
+        }
+        .timetable {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .timetable th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Study Material</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#plus-one">Plus One</a>
+        <a href="#plus-two">Plus Two</a>
+        <a href="#timetable">Study Timetable</a>
+        <a href="#">Exams</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>Welcome to our Study Material Website</h2>
+        <p>This website provides study materials for various subjects and exams. Browse through our resources to excel in your academics.</p>
+    </section>
+    <section id="plus-one">
+        <h2>Plus One Study Materials</h2>
+        <p>Choose your subject to access study materials:</p>
+        <ul class="subject-list">
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">History</a></li>
+            <!-- Add more subjects as needed -->
+        </ul>
+    </section>
+    <section id="plus-two">
+        <h2>Plus Two Study Materials</h2>
+        <p>Prepare for your exams with our comprehensive study materials:</p>
+        <ul class="subject-list">
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Economics</a></li>
+            <!-- Add more subjects as needed -->
+        </ul>
+    </section>
+    <section id="timetable">
+        <h2>Study Timetable</h2>
+        <table class="timetable">
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>8:00 AM - 10:00 AM</td>
+                <td>Mathematics</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 12:30 PM</td>
+                <td>History</td>
+                <td>Mathematics</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>Economics</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 3:00 PM</td>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td>Mathematics</td>
+                <td>Physics</td>
+                <td>Biology</td>
+            </tr>
+            <tr>
+                <td>3:30 PM - 5:30 PM</td>
+                <td>Economics</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Computer Science</td>
+                <td>English</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </section>
+    <section>
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality study materials for students to enhance their learning experience. Our team consists of experienced educators who have curated the best resources to help you succeed academically.</p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to contact us:</p>
+        <p>Email: info@studymaterial.com</p>
+        <p>Phone: +1-123-456-7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Study Material. All rights reserved.</p>
+    </footer>
+    <h1>contact hss live</h1>
+    <div id="chat-box"></div>
+    <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+        <input type="hidden" id="username-input" placeholder="Username"> <!-- Add username input -->
+        <button type="submit">Send</button>
+    </form>
+    <form id='clear'action="/" method="post">
+        <button type="submit">Clear Chat</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function fetchMessages() {
+            $.ajax({
+                url: '/get_messages',
+                type: 'GET',
+                data: {last_message_index: $('#chat-box').children().length},
+                success: function(response) {
+                    response.forEach(function(messageObj) {
+                        $('#chat-box').append('<p><strong>' + messageObj.username + ':</strong> ' + messageObj.message + '</p>');
+                    });
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            var username = prompt('Enter your username:'); // Prompt for username
+            $('#username-input').val(username);
+
+            // Fetch messages initially
+            fetchMessages();
+
+            // Fetch messages every 3 seconds
+            setInterval(fetchMessages, 3000);
+
+            $('#message-form').submit(function(event) {
+                event.preventDefault();
+                var message = $('#message-input').val();
+                $('#message-input').val('');
+                $.ajax({
+                    url: '/send_message',
+                    type: 'POST',
+                    data: {username: username, message: message}, // Include username
+                    success: function(response) {
+                        console.log(response.message);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
